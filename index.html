@@ -7,19 +7,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="http://chicagomaroon.github.io/img/favicon.png">
 	<meta name="description" content="[title]">
-    <meta name="author" content="[author]"><meta property="og:url" content="http://chicagomaroon.github.io/[slug]/" />
-    <meta property="og:title" content="[title]" />
-    <meta property="og:description" content="[subhead]" />
-    <meta property="og:image" content="http://chicagomaroon.github.io/[slug]/img/[pick image].jpg" />
+  <meta name="author" content="[author]"><meta property="og:url" content="http://chicagomaroon.github.io/[slug]/" />
+  <meta property="og:title" content="[title]" />
+  <meta property="og:description" content="[subhead]" />
+  <meta property="og:image" content="http://chicagomaroon.github.io/[slug]/img/[pick image].jpg" />
 
     <title>[title] - Interactive feature - ChicagoMaroon.com</title>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cinzel:900|Lora|Fjalla+One' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://localhost:8888/styles/reset.css" rel="stylesheet" type='text/css'>
-    <link href="http://localhost:8888/styles/base.css" rel="stylesheet" type='text/css'>
-    <link href="main.css" rel="stylesheet" type='text/css'>
+		<link rel="stylesheet" href="../responsiveslides.css">
+		<link rel="stylesheet" href="demo.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="../responsiveslides.min.js"></script>
+		<script>
+		$(function () {
 
+			// Slideshow 1
+			$("#slider1").responsiveSlides({
+				maxwidth: 800,
+				speed: 800
+			});
+		</script>
  </head>
+ <body>
+	 <div id="wrapper">
+		 <ul class="rslides" id="slider1">
+       <li><img src="assets/1.jpg" alt=""></li>
+       <li><img src="assets/2.png" alt=""></li>
+       <li><img src="assets/3.jpg" alt=""></li>
+     </ul>
+	 <div id="disqus_thread" class='col-lg-offset-2 col-lg-7 col-md-offset-2 col-md-7 col-sm-offset-2 col-sm-9 col-xs-12'></div>
+	 <script type="text/javascript">
+			 /* * * CONFIGURATION VARIABLES * * */
+			 var disqus_shortname = 'chicagomarooninteractive';
+
+			 /* * * DON'T EDIT BELOW THIS LINE * * */
+			 (function () {
+					 var dsq = document.createElement('script');
+					 dsq.type = 'text/javascript';
+					 dsq.async = true;
+					 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			 })();
+	 </script>
+	 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+	 </noscript>
+ </body>
  </html>
