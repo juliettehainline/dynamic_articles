@@ -6,19 +6,20 @@
 }
 
 nav a:link {
-    color: #800000 !important;
+    color: rgba(128,0,0,0.4) !important;
 }
 
 nav a:visited{
-    color: #800000 !important;
+    color: rgba(128,0,0,0.4) !important;
 }
 
 nav a:hover {
     text-decoration: underline;
+    text-decoration-color: white;
 }
 
 nav a:active {
-    color: red;
+    color: rgba(128,0,0,0.4) 
 }
 
 ul, li {
@@ -27,14 +28,14 @@ ul, li {
   font-size: 0.9em;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
-  background-color: rgba(192, 192, 192, 0.5);
+  background-color: rgba(192, 192, 192, 0.3);
 }
 
 .sidebar {
     float: right;
     right: 35px;
     width: 125px;
-    padding-top: 375px;
+    padding-top: 450px;
     position: fixed;
     overflow-y: auto;
     transition: all 0.4s ease 0s;
@@ -63,15 +64,24 @@ ul, li {
     padding-top: 10px;
 }
 
-h3 {
-    a {
-      color: white;
-      &:hover, &:visited, &active {
-        color: white;
-        text-decoration: underline;
-      }
-    }
+h3 a:link {
+    color: white !important;
 }
+
+h3 a:visited {
+    color: white !important;
+}
+
+h3 a:hover{
+    color: white !important;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+h3 a:active{
+    color: white !important;
+}
+
 .credit {
     color: #BBBBBB;
     font-size: .7rem;
@@ -97,7 +107,7 @@ h3 {
 }
 
 .fullscreen-picture {
-    background: url([image]) no-repeat center center fixed;
+    background: url(http://cdn.playbuzz.com/cdn/7a7a5814-ed79-410c-b748-db6a24f73f0b/4d71c010-f930-4334-ba62-79d87a7ddef4.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 85vh;
     padding-top: 45px;
@@ -113,6 +123,58 @@ h3 {
     display:block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 376px;
+}
+
+.section-link {
+    color: #FFFFFF;
+    width: 150px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+.section-container {
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    /*background: maroon;*/
+    padding: 0.4em 1em;
+    padding-bottom: 0;
+    /*margin-bottom: 0.75em;*/
+    font-weight: 700;
+    text-shadow: 0px 2px 3px maroon;
+    text-align: center;
+}
+.section-container a:link {
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 2px 3px maroon;
+      /*background: maroon;*/
+}
+
+.section-container a:hover {
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 2px 3px maroon;
+      text-decoration: underline !important;
+}
+
+.section-container a:active {
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 2px 3px maroon;
+      text-decoration: underline !important;
+}
+
+.section-container a:hover {
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      text-shadow: 0px 2px 3px maroon;
+      text-decoration: underline;
 }
 
 .container {
@@ -124,11 +186,12 @@ h3 {
     padding-left: 30px;
 }
 
-.quotation {
+.quotation-text {
     font-style: italic;
     font-weight: 600;
     padding-top: 10px;
     margin: 0 auto;
+    text-align: center;
 }
 
 p {
@@ -161,29 +224,6 @@ p.first-paragraph:first-letter {
 
 #comments {
     right: 75px;
-}
-.section-link {
-    color: #FFFFFF;
-    width: 150px;
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-}
-.section-container {
-    font-size: 1em;
-    color: #fff;
-    position: relative;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    /*background: maroon;*/
-    padding: 0.4em 1em;
-    padding-bottom: 0;
-    /*margin-bottom: 0.75em;*/
-    font-weight: 700;
-    text-shadow: 0px 2px 3px maroon;
-    text-align: center;
 }
 
 div.social-icon-container {

@@ -1,19 +1,3 @@
-// Scrolling for Nav Bar
-$("section").waypoint(function(direction) {
-     $("nav li a").removeClass();
-     return $("nav li a[href=#" + $(this.element).attr("id") + "]").addClass("active");
-   }, {
-     offset: 140
-   });
-   $(window).scroll(function() {
-     $("nav.stuck").css({
-       transform: "translateX(-" + ($(this).scrollLeft()) + "px)"
-     });
-     return $("nav:not(.stuck)").css({
-       transform: none
-     });
-   });
-
 // Enables Facebook Share Function //
 $(document).ready(function () {
     $('#fb-icon').click(function (event) {
