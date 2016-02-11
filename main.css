@@ -25,17 +25,16 @@ nav a:active {
 ul, li {
   list-style: none;
   font-size: 0.9em;
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 1.5px;
 }
 
 .sidebar {
     float: right;
     right: 70px;
-    width: 125px;
+    width: 200px;
     padding-top: 450px;
-    position:fixed;
-    margin: 0px;
+    position: fixed;
 }
 
 .row {
@@ -67,7 +66,8 @@ h3 a:visited {
 
 h3 a:hover{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.6;
 }
 
 h3 a:active{
@@ -98,14 +98,6 @@ h3 a:active{
     margin: 0 auto;
 }
 
-.section-container {
-    color: #800000;
-    font-size: 0.5rem;
-    text-align: center;
-    margin: 0px;
-    font-family: "Crimson Text", "Georgia", Cambria, Times New Roman, Times, serif;
-}
-
 .fullscreen-picture {
     background: url(http://cdn.playbuzz.com/cdn/7a7a5814-ed79-410c-b748-db6a24f73f0b/4d71c010-f930-4334-ba62-79d87a7ddef4.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -132,13 +124,14 @@ h3 a:active{
 
 .section-container {
     font-size: 1em;
+    font-family: "Crimson Text", "Georgia", Cambria, Times New Roman, Times, serif;
     color: #fff;
     position: relative;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     /*background: maroon;*/
     padding: 0.4em 1em;
     padding-bottom: 0;
-    /*margin-bottom: 0.75em;*/
+    margin-bottom: 0.5em;
     font-weight: 700;
     text-shadow: 0px 2px 3px maroon;
     text-align: center;
@@ -147,28 +140,20 @@ h3 a:active{
       color: #fff;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       text-shadow: 0px 2px 3px maroon;
-      /*background: maroon;*/
 }
 
 .section-container a:hover {
       color: #fff;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       text-shadow: 0px 2px 3px maroon;
-      text-decoration: underline;
+      text-decoration: none;
+      opacity: 0.4;
 }
 
 .section-container a:active {
       color: #fff;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       text-shadow: 0px 2px 3px maroon;
-      text-decoration: underline;
-}
-
-.section-container a:hover {
-      color: #fff;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-      text-shadow: 0px 2px 3px maroon;
-      text-decoration: underline;
 }
 
 .cover-photo.credit {
@@ -184,15 +169,12 @@ h3 a:active{
 }
 
 .body-text {
-    padding-top: 40px;
-    color: #333333;
     font-size: 1.0rem;
     line-height: 1.45;
-    text-align: center;
 }
 
 p {
-    text-align: left !important;
+    text-align: left
 }
 
 .navbar-brand > img {
@@ -235,4 +217,30 @@ p.first-paragraph:first-letter {
 
 div.social-icon-container {
     font-size: 1rem;
+}
+
+@media all and (max-height: 375px) and (min-height: 0px) {
+  ul, li {
+    visibility: hidden;
+  }
+}
+@media all and (max-height: 490px) and (min-height: 376px) {
+  ul, li {
+    visibility: hidden;
+  }
+}
+@media all and (max-height: 615px) and (min-height: 491px) {
+  ul, li {
+    visibility: hidden;
+  }
+}
+@media all and (max-width: 767px) and (min-width: 650px) {
+  ul, li {
+    visibility: hidden;
+  }
+}
+@media all and (max-width: 649px) and (min-width: 0px) {
+  ul, li {
+    visibility: hidden;
+  }
 }
